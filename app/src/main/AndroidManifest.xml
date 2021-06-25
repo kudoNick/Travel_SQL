@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dcht69.travelapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Travel">
+        <activity android:name=".DetailLocation.View.DetailLocationActivity"></activity>
+        <activity android:name=".DetailLocation.View.ChoosePhotoLocationActivity" />
+        <activity android:name=".DetailLocation.View.AddLocationActivity"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".DetailLocation.View.LocationActivity" />
+        <activity android:name=".city.View.ChoosePhotoActivity" />
+        <activity android:name=".city.View.AddCityActivity" />
+        <activity android:name=".city.View.CityActivity" />
+        <activity android:name=".thang.DetailsForeginAct" />
+        <activity android:name=".thang.SignUpAct" />
+        <activity android:name=".thang.TravelVietNamAct" />
+        <activity android:name=".thang.DetailsVietActivity" />
+        <activity android:name=".thang.TravelForeginAct" />
+        <activity android:name=".thang.LoginAct">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
