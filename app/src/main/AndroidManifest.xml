@@ -13,20 +13,18 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.Travel">
-        <activity android:name=".DetailLocation.View.DetailLocationActivity"></activity>
+        <activity android:name=".DetailLocation.View.DetailLocationActivity" />
         <activity android:name=".DetailLocation.View.ChoosePhotoLocationActivity" />
-        <activity android:name=".DetailLocation.View.AddLocationActivity"
-            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".DetailLocation.View.AddLocationActivity"
+            android:windowSoftInputMode="stateHidden" />
         <activity android:name=".DetailLocation.View.LocationActivity" />
         <activity android:name=".city.View.ChoosePhotoActivity" />
         <activity android:name=".city.View.AddCityActivity" />
         <activity android:name=".city.View.CityActivity" />
-        <activity android:name=".thang.DetailsForeginAct" />
-        <activity android:name=".thang.SignUpAct" />
-        <activity android:name=".thang.TravelVietNamAct" />
-        <activity android:name=".thang.DetailsVietActivity" />
-        <activity android:name=".thang.TravelForeginAct" />
-        <activity android:name=".thang.LoginAct">
+        <activity android:name=".Login_Registration.CommentActivity" />
+        <activity android:name=".Login_Registration.RegisterActivity" />
+        <activity android:name=".Login_Registration.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

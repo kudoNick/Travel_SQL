@@ -18,6 +18,7 @@ import com.dcht69.travelapp.DetailLocation.View.LocationActivity;
 import com.dcht69.travelapp.R;
 import com.dcht69.travelapp.city.Moder.City;
 import com.dcht69.travelapp.city.Sqlite.SqliteCity;
+import com.dcht69.travelapp.city.View.CityActivity;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -85,6 +86,13 @@ public class DetailCityAdapter extends RecyclerView.Adapter<DetailCityAdapter.Ci
                             notifyDataSetChanged();
                             Toast.makeText(context, "Xóa Thành công", Toast.LENGTH_SHORT).show();
                             dialogInterface.dismiss();
+
+                            if (cityList.size() != 0) {
+                                CityActivity.line1.setVisibility(View.GONE);
+                            } else {
+                                CityActivity.line1.setVisibility(View.VISIBLE);
+                            }
+
                         }else {Toast.makeText(context," thất bại",Toast.LENGTH_SHORT).show();
                         }
 

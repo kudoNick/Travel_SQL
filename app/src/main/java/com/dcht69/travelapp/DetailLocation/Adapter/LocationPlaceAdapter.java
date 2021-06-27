@@ -17,6 +17,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.dcht69.travelapp.DetailLocation.Moder.LocationPlace;
 import com.dcht69.travelapp.DetailLocation.Sqlite.SqliteDetailLocation;
 import com.dcht69.travelapp.DetailLocation.View.DetailLocationActivity;
+import com.dcht69.travelapp.DetailLocation.View.LocationActivity;
 import com.dcht69.travelapp.R;
 import com.google.gson.Gson;
 import com.squareup.picasso.Picasso;
@@ -85,6 +86,12 @@ public class LocationPlaceAdapter extends RecyclerView.Adapter<LocationPlaceAdap
                             notifyDataSetChanged();
                             Toast.makeText(context, "Xóa Thành công", Toast.LENGTH_SHORT).show();
                             dialogInterface.dismiss();
+
+                            if (locationPlaceList.size() != 0) {
+                                LocationActivity.line1.setVisibility(View.GONE);
+                            } else {
+                                LocationActivity.line1.setVisibility(View.VISIBLE);
+                            }
                         }else {Toast.makeText(context," thất bại",Toast.LENGTH_SHORT).show();
                         }
 
